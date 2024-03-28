@@ -5,7 +5,6 @@ from django.db import models
 class Composition(models.Model):
     title = models.CharField(max_length=254)
     subtitle = models.CharField(max_length=254, blank=True)
-    year = models.IntegerField
+    year = models.CharField(max_length=4, blank=True)
     instrumentation = models.CharField(max_length=254, blank=True)
-    premiere_date = models.DateField
     publisher = models.CharField(max_length=100, blank=True)
