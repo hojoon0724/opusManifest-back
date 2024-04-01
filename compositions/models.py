@@ -7,4 +7,5 @@ class Composition(models.Model):
     subtitle = models.CharField(max_length=254, blank=True)
     year = models.CharField(max_length=4, blank=True)
     instrumentation = models.CharField(max_length=254, blank=True)
-    publisher = models.CharField(max_length=100, blank=True)
+    category = models.CharField(max_length=100, blank=True)
+    notes = models.TextField(default="", blank=True)
