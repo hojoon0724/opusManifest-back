@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 
 
 # Create your models here.
@@ -9,3 +10,4 @@ class Composition(models.Model):
     instrumentation = models.CharField(max_length=254, blank=True)
     category = models.CharField(max_length=100, blank=True)
     notes = models.TextField(default="", blank=True)
+    timestamp = models.DateTimeField(default=datetime.now())
